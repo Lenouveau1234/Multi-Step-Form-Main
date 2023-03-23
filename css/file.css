@@ -1,0 +1,653 @@
+body{
+    /* background-color: hsl(217, 100%, 97%); */
+    font-family: 'Fraunces', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container-of-all{
+    display: flex;
+    padding: 1%;
+}
+/*--------------------------------------------------- Sidebar ----------------------------------------------------*/
+.Sidebar{
+    background-image: url('/assets/images/bg-sidebar-desktop.svg');
+    border-radius: 10px;
+    margin-right: 9%;
+    margin-top: 1%;
+    height: 520px;
+}
+.Sidebar .one{
+    background-color: hsl(228, 100%, 84%);
+}
+/*------------------------------------------------ End Sidebar ---------------------------------------------------*/
+
+/*-------------------------------------------------- Step One ----------------------------------------------------*/
+.step-1{
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 225%;
+    padding: 2.2%;
+}
+.step-1 h1{
+    font-family: 'Fraunces', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(213, 96%, 18%);
+    font-size: 28px;
+}
+.step-1 p,
+.step-1 input::placeholder{
+    color: hsl(231, 11%, 63%);
+}
+.step-1 p{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.step-1 label{
+    color: hsl(213, 96%, 18%);
+}
+.step-1 input{
+    max-width: 700px;
+}
+.btn{
+    width: 100px;
+    margin-top: 20px;
+    color: #fff;
+    flex-direction: row;
+    background-color: hsl(213, 96%, 18%);
+}
+.one,.two,.three,.four{
+    border: 2px solid #ddd;
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    align-self: center;
+    border-radius: 45%;
+    color: #fff;
+}
+.step-name{
+    font-size: 13px;
+    font-weight: 600;
+}
+.step-number{
+    font-size: 12px;
+    color: hsl(229, 24%, 87%);
+}
+.custom-alert{
+    padding: 5px 10px;
+    color: hsl(354, 84%, 57%);
+    display: none;
+}
+.custom-alert .just-val{
+    border-color: rgb(0, 255, 76) !important;
+}
+/*----------------------------------------------- End Step One ---------------------------------------------------*/
+
+/*------------------------------------------------- Step Two -----------------------------------------------------*/
+.step-2{
+    margin-left: 21%;
+    width: 240%;
+    padding: 3.2%;
+}
+.step-2 h1 {
+    font-family: 'Fraunces', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(213, 96%, 18%);
+    font-size: 28px;
+}
+.step-2 p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: hsl(231, 11%, 63%);
+}
+.card{
+    border: 1px solid hsl(229, 24%, 87%);
+    cursor: pointer;
+}
+.card:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.card-body .card-title{
+    color: hsl(213, 96%, 18%);
+    font-size: 15px;
+}
+.card-body .card-title2{
+    color: hsl(213, 96%, 18%);
+    margin-top: -37%;
+    font-size: 12px;
+}
+.card-body .card-text{
+    font-size: 13px;
+    margin-top: -6%;
+}
+.change-theme .one {
+    width: 35px;
+    height: 19px;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 20px;
+}
+.change-theme .white-monthly {
+    width: 10px;
+    height: 11px;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    top: 3px;
+    right: -3px;
+    cursor: pointer;
+}
+.change-theme .white-yearly{
+    width: 10px;
+    height: 11px;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    top: 3px;
+    right: -19px;
+    cursor: pointer;
+}
+.yearly{
+    color: #ddd;
+}
+.subscription{
+    width: 450px;
+    margin-top: 20px;
+    color: hsl(213, 96%, 18%);
+}
+.step-2 .back-2{
+    margin-top: auto;
+    margin-left: -4%;
+    text-decoration: none;
+    color: hsl(231, 11%, 63%) !important;
+}
+.step-2 .Next-2{
+    margin-left: 46%;
+}
+.step-2 .Next-2:hover{
+    color: #fff;
+    background-color: hsl(213, 96%, 18%, .8);
+}
+.display-none{
+    display: none !important;
+}
+/*----------------------------------------------- End Step Two ---------------------------------------------------*/
+
+/*------------------------------------------------- Step Three ---------------------------------------------------*/
+.step-3{
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 225%;
+    padding: 3.2%;
+}
+.step-3 .service-yearly,
+.step-3 .storage-yearly,
+.step-3 .Profile-yearly,
+.step-3 .storage-monthly,
+.step-3 .Profile-monthly,
+.step-3 .service-monthly{
+    cursor: pointer;
+    margin-top: 25px;
+    border: 1.5px solid hsl(243, 100%, 62%);
+    padding: 5px;
+    border-radius: 10px;
+    width: 500px;
+    height: 70px;
+}
+.step-3 .service-yearly .price-yearly,
+.step-3 .storage-yearly .price-yearly,
+.step-3 .Profile-yearly .price-yearly,
+.step-3 .service-monthly .price-monthly,
+.step-3 .storage-monthly .price-monthly,
+.step-3 .Profile-monthly .price-monthly{
+    font-size: 15px;
+    color: hsl(243, 100%, 62%);
+}
+.step-3 .yearly .service-yearly  .service-div,
+.step-3 .yearly .service-yearly .storage-div,
+.step-3 .yearly .service-yearly .Customizable-div {
+    font-size: 15px;
+}
+.step-3 .row .col-6 p{
+    margin-bottom: 0 !important;
+}
+.checkMark1,
+.checkMark2,
+.checkMark3{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 3px;
+}
+.step-3 .back-3{
+    margin-top: auto;
+    margin-left: -4%;
+    text-decoration: none;
+    color: hsl(231, 11%, 63%);
+}
+.step-3 .Next-3{
+    margin-left: 55%;
+}
+.step-3 .Next-3:hover {
+    color: #fff;
+    background-color: hsl(213, 96%, 18%, .8);
+}
+.checked{
+    background-color: hsl(243, 100%, 62%);
+}
+/*----------------------------------------------- End Step Three -------------------------------------------------*/
+
+/*------------------------------------------------ Step Four -----------------------------------------------------*/
+.step-4 {
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 225%;
+    padding: 3.2%;
+}
+.step-4 h1 {
+    font-family: 'Fraunces', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(213, 96%, 18%);
+    font-size: 28px;
+}
+.step-4 p {
+    color: hsl(231, 11%, 63%);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.step-4 .arcade-monthly,
+.step-4 .arcade-yearly{
+    height: 180px;
+    border-radius: 10px;
+    background-color: hsl(217, 100%, 97%);
+}
+.step-4 .arcade-monthly .container h3,
+.step-4 .arcade-yearly .container h3{
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.step-4 .arcade-monthly .container div a,
+.step-4 .arcade-yearly .container div a{
+    font-size: 14px;
+    color: hsl(231, 11%, 63%);
+}
+.step-4 .arcade-monthly .container div a:hover,
+.step-4 .arcade-yearly .container div a:hover{
+    color: hsl(243, 100%, 62%);
+    font-size: 15px;
+    font-weight: 600;
+}
+.step-4 .arcade-monthly .arcade .ms-auto,
+.step-4 .arcade-yearly .arcade .ms-auto{
+    color: hsl(213, 96%, 18%);
+    margin-top: 8px;
+    font-weight: bolder;
+}
+.step-4 .arcade-monthly hr,
+.step-4 .arcade-yearly hr{
+    width: 90%;
+    margin-left: 5%;
+    color: hsl(231, 11%, 63%);
+}
+.step-4 .arcade-monthly .service,
+.step-4 .arcade-monthly .storage,
+.step-4 .arcade-yearly .service,
+.step-4 .arcade-yearly .storage{
+    margin-top: -3%;
+    font-size: 14px;
+    color: hsl(231, 11%, 63%);
+}
+.step-4 .arcade-monthly .service .ms-auto,
+.step-4 .arcade-monthly .storage .ms-auto,
+.step-4 .arcade-yearly .service .ms-auto,
+.step-4 .arcade-yearly .storage .ms-auto{
+    color: hsl(213, 96%, 18%);
+    font-weight: bolder;
+}
+.step-4 .container div.total{
+    font-size: 14px;
+    color: hsl(231, 11%, 63%);
+}
+.step-4 .container div.total-price{
+    color: hsl(243, 100%, 62%);
+    font-weight: bolder;
+    font-size: 18px;
+}
+.step-4 .back-4{
+    margin-left: 5px;
+    margin-top: 30%;
+    text-decoration: none;
+    color: hsl(231, 11%, 63%);
+}
+.step-4 .confirm{
+    margin-right: 10px;
+    margin-top: 30%;
+}
+.step-4 .confirm:hover{
+    color: #fff;
+    background-color: hsl(243, 100%, 62%);
+}
+/*----------------------------------------------- End Step Four -------------------------------------------------*/
+
+/*------------------------------------------------ Step Five ----------------------------------------------------*/
+.step-5 {
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 225%;
+    padding: 3.2%;
+}
+.step-5 img{
+    margin-left: 30%;
+    margin-top: 15%;
+}
+.step-5 h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-bottom: 5% !important;
+}
+.step-5 p{
+    text-align: center;
+    margin-right: 25%;
+    color: hsl(231, 11%, 63%);
+}
+/*----------------------------------------------- End Step Five -------------------------------------------------*/
+
+
+/*----------------------------------------------- Iphone XR -------------------------------------------------*/
+@media (max-width: 575.98px) {
+    body{
+        background-color: hsl(228, 100%, 84%);
+    }
+    .container-of-all{
+        flex-direction: column;
+        padding: 0px !important;
+    }
+    .Sidebar{
+        background-image: url(/assets/images/bg-sidebar-mobile.svg);
+        margin-top: 0 !important;
+        max-width: 576px;
+        background-position: 2%;
+        height: 180px;
+        background-position-y: inherit;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .Sidebar .all-steps{
+        flex-wrap: nowrap !important;
+        padding: 0rem !important;
+        justify-content: space-around;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-right: 0%;
+    }
+    .step-number,
+    .step-name{
+        display: none !important;
+    }
+    .Sidebar .all-steps .d-flex {
+        margin-left: -8%;
+    }
+    .Sidebar .all-steps .one,
+    .Sidebar .all-steps .two,
+    .Sidebar .all-steps .three,
+    .Sidebar .all-steps .four{
+        width: 55px;
+        margin-right: -5px;
+    }
+    /*---------------------------------------- step one ------------------------------------*/
+    .step-1{
+        background-color: #fff;
+        max-width: 569px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: -15%;
+        width: 94%;
+        height: 80%;
+        padding: 4.2%;
+        border-radius: 15px;
+    }
+    .next-1{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    .next-1 .btn{
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    /*---------------------------------------- End step one ------------------------------------*/
+
+    /*---------------------------------------- step Two ------------------------------------*/
+    .step-2 {
+        background-color: #fff;
+        max-width: 569px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: -16% !important;
+        width: 94%;
+        height: 80%;
+        padding: 5.2%;
+        border-radius: 15px;
+    }
+    .step-2 h1{
+        padding-left: 25px;
+        padding-top: 30px;
+    }
+    .step-2 p{
+        padding-left: 25px;
+        padding-top: 10px;
+        margin-bottom: 45px !important;
+    }
+    /*---------------------------------------- Monthly ------------------------------------*/
+    .step-2 .monthly-step-2{
+        flex-direction: column;
+    }
+    .step-2 .monthly-step-2 .card{
+        width: 21rem !important;
+        height: 80px !important;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+    .step-2 .monthly-step-2 .card .card-body{
+        margin-top: 7px;
+    }
+    .step-2 .monthly-step-2 .card img{
+        margin: 0 !important;    
+        margin-left: 5px !important;    
+    }
+    .step-2 .monthly-step-2 .card .card-body .card-title{
+        margin-left: 27px;
+    }
+    .step-2 .monthly-step-2 .card .card-body .card-text{
+        margin-top: -7% !important;
+    }
+    /*---------------------------------------- End Monthly ------------------------------------*/
+
+    /*---------------------------------------- Yearly -----------------------------------------*/
+    .step-2 .yearly-step-2 {
+        flex-direction: column;
+    }
+    .step-2 .yearly-step-2 .card {
+        width: 21rem !important;
+        height: 80px !important;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+    .step-2 .yearly-step-2 .card img {
+        margin-top: 0rem !important;
+    }
+    .step-2 .yearly-step-2 .card .card-body .card-title {
+        margin-left: 27px;
+        margin-bottom: 15px;
+        font-size: 18px !important;
+        margin-top: -3px;
+        ;
+    }
+    .step-2 .yearly-step-2 .card .card-body .card-text {
+        font-size: 13px;
+        margin-top: -10%;
+    }
+    .step-2 .yearly-step-2 .card .card-body .card-title2 {
+        margin-top: -23% !important;
+    }
+    /*---------------------------------------- End Yearly -----------------------------------------*/
+    .step-2 .subscription{
+        width: 21rem !important;
+        margin-left: 25px;
+        margin-top: 30px !important;
+        margin-bottom: 30px;
+    }
+    .step-2 .subscription .change-theme .white-monthly,
+    .step-2 .subscription .change-theme .white-yearly{
+        top: 2px !important;
+    }
+    .step-2 .buttons-step-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    .step-2 .buttons-step-2 .Next-2 {
+        margin-bottom: 15px;
+        margin-left: 55% !important;
+    }
+    .step-2 .buttons-step-2 .back-2{
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+    }
+    /*---------------------------------------- End step Two ------------------------------------*/
+
+    /*---------------------------------------- Step Three ------------------------------------*/
+    .step-3{
+        background-color: #fff;
+        max-width: 569px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: -16% !important;
+        width: 94%;
+        height: 80%;
+        padding: 5.2%;
+        border-radius: 15px;
+        padding-bottom: 8%;
+    }
+    .step-3 .yearly .service-yearly,
+    .step-3 .yearly .storage-yearly,
+    .step-3 .yearly .Profile-yearly,
+    .step-3 .monthly .service-monthly,
+    .step-3 .monthly .storage-monthly,
+    .step-3 .monthly .Profile-monthly{
+        width: 335px !important;
+        padding-bottom: 55px;
+        height: 50px !important;
+        margin-left: 1%;
+    }
+    .step-3 .yearly .service-yearly .price-yearly,
+    .step-3 .yearly .storage-yearly .price-yearly,
+    .step-3 .yearly .Profile-yearly .price-yearly,
+    .step-3 .monthly .service-monthly .price-monthly,
+    .step-3 .monthly .storage-monthly .price-monthly,
+    .step-3 .monthly .Profile-monthly .price-monthly{
+        font-size: 13px !important;
+        margin-right: 7px;
+    }
+    .step-3 .yearly .service-yearly .service-div,
+    .step-3 .yearly .storage-yearly .storage-div,
+    .step-3 .yearly .Profile-yearly .Customizable-div,
+    .step-3 .monthly .service-monthly .service-div,
+    .step-3 .monthly .storage-monthly .storage-div,
+    .step-3 .monthly .Profile-monthly .Customizable-div{
+        font-size: 12px !important;
+    }
+    .step-3 .yearly .row .col-7,
+    .step-3 .monthly .row .col-7{
+        margin-top: 5px !important;
+    }
+    .step-3 .yearly .row img,
+    .step-3 .monthly .row img{
+        margin-top: -12px !important;
+        background-color: aqua;
+    }
+    .step-3 .buttons-step-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .step-3 .buttons-step-3 .Next-3 {
+        margin-bottom: 15px;
+        margin-left: 58% !important;
+    }
+
+    .step-3 .buttons-step-3 .back-3 {
+        margin-left: 5px !important;
+        margin-top: 25px !important;
+    }
+    /*---------------------------------------- End Step Three ------------------------------------*/
+
+    /*---------------------------------------- Step Four ------------------------------------*/
+    .step-4{
+        background-color: #fff;
+        max-width: 569px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: -16% !important;
+        width: 94%;
+        height: 80%;
+        padding: 5.2%;
+        border-radius: 15px;
+        padding-bottom: 20%;
+    }
+    .step-4 .buttons-step-4{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+        margin-bottom: 0%;
+    }
+    .step-4 .buttons-step-4 .back-4 {
+        margin-left: 5px !important;
+        margin-top: 25px !important;
+    }
+    .step-4 .buttons-step-4 .confirm {
+        margin-top: 20px;
+        margin-left: 58% !important;
+        margin-bottom: 17px;
+    }
+    /*---------------------------------------- End Step Four ------------------------------------*/
+
+    /*---------------------------------------- Step Five ------------------------------------*/
+    .step-5{
+        background-color: #fff;
+        max-width: 569px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: -16% !important;
+        width: 94%;
+        height: 80%;
+        padding: 5.2%;
+        border-radius: 15px;
+        padding-bottom: 20%;
+    }
+    .step-5 img{
+        margin-left: 40%;
+    }
+    .step-5 h1{
+        margin-right: 0%;
+    }
+        .step-5 p{
+            margin-right: 0;
+        }
+    /*---------------------------------------- End Step Five ------------------------------------*/
+
+}

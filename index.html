@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/file.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container-of-all p-2">
+    
+    <!---------------------------------------------- Sidebar start -------------------------------------------------->
+    <div class="container Sidebar ">
+
+      <div class="d-flex flex-wrap all-steps ">
+
+        <div class="container d-flex p-2 mb-3">
+          <div class="one text-dark">1</div>
+          <div class="container">
+            <div class="step-number">STEP 1</div>
+            <div class="text-light step-name">YOUR INFO</div>
+          </div>
+        </div>
+
+        <div class="container d-flex p-2 mb-3">
+          <div class="two text-dark">2</div>
+          <div class="container">
+            <div class="step-number">STEP 2</div>
+            <div class="text-light step-name">SELECT PLAN</div>
+          </div>
+        </div>
+        
+        <div class="container d-flex p-2 mb-3">
+          <div class="three text-dark">3</div>
+          <div class="container">
+            <div class="step-number">STEP 3</div>
+            <div class="text-light step-name">ADD-ONS</div>
+          </div>
+        </div>
+
+        <div class="container d-flex p-2 mb-3">
+          <div class="four text-dark">4</div>
+          <div class="container">
+            <div class="step-number">STEP 4</div>
+            <div class="text-light step-name">SUMMARY</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>  
+    <!---------------------------------------------- Sidebar end -------------------------------------------------->
+
+    <!---------------------------------------------- Step 1 start -------------------------------------------------->
+    <div class="container d-flex flex-column step-1 display-none">
+
+          <div class="personal-info pb-4">
+            <h1 class="fw-bold">Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+          
+            <form action="#" class="form-group">
+            
+              <div class="pb-4">
+                <div class=" d-flex">
+                  <label for="">Name</label>
+                  <div class="custom-alert ms-auto">
+                    This Field Is Required
+                  </div>
+                </div>
+                <input type="text" class="form-control name-input" placeholder="e.g. Stephen King">
+              </div>
+              <div class="pb-4">
+                <div class=" d-flex">
+                  <label for="">Email Address</label>
+                  <div class="custom-alert ms-auto">
+                    This Field Is Required
+                  </div>
+                </div>
+                <input type="email" class="form-control email-input" placeholder="e.g. stephenking@lorem.com">
+              </div>
+              <div class="pb-5">
+                <div class=" d-flex">
+                  <label for="">Phone Number</label>
+                  <div class="custom-alert ms-auto">
+                    This Field Is Required
+                  </div>
+                </div>
+                <input type="tel" class="form-control cellphone-input" placeholder="e.g. +1 234 567 890">
+              </div>
+            
+              <div class="next-1" ><input type="submit" class="d-flex btn ms-auto" value="Next Step" /></div>
+            </form>
+
+          </div>
+    </div>      
+      <!---------------------------------------------- Step 1 end ---------------------------------------------------->
+      
+      <!---------------------------------------------- Step 2 start -------------------------------------------------->
+      <div class="d-flex p-1 mt-4 step-2 flex-column display-none">
+
+      
+        <h1 class="fw-bold">Select your plan</h1>
+        <p>You have the option of monthly or yearly billing.</p>
+
+        <div class="d-flex">
+
+          <!---------------- start monthly --------------->
+          <div class="monthly-step-2 d-flex ">
+            <div class="card me-2 plan" style="width: 9rem; height: 150px;">
+              <img 
+                src="assets/images/icon-arcade.svg" class="card-img-top p-2 mt-3 ms-2 mb-2" style="width: 3.2rem;">
+              <div class="card-body">
+                <h5 class="card-title">Arcade</h5>
+                <p class="card-text">$9/mo</p>
+              </div>
+            </div>
+
+            <div class="card me-2 plan" style="width: 9rem; height: 150px;">
+              <img src="assets/images/icon-advanced.svg" class="card-img-top p-2 mt-3 ms-2 mb-2" style="width: 3.2rem;">
+              <div class="card-body">
+                <h5 class="card-title">Advanced</h5>
+                <p class="card-text">$12/mo</p>
+              </div>
+            </div>
+
+            <div class="card me-2 plan" style="width: 9rem; height: 150px;">
+              <img src="assets/images/icon-pro.svg" class="card-img-top p-2 mt-3 ms-2 mb-2" style="width: 3.2rem;">
+              <div class="card-body">
+                <h5 class="card-title">Pro</h5>
+                <p class="card-text">$15/mo</p>
+              </div>
+            </div>
+          </div>
+          <!---------------- End monthly --------------->
+
+          <!---------------- start yearly --------------->
+          <div class="yearly-step-2 d-flex display-none">
+            <div class="card me-2 plan" style="width: 9rem; height: 150px;">
+              <img src="assets/images/icon-arcade.svg" class="card-img-top p-2 mt-3 ms-2 mb-2" style="width: 3.2rem;">
+              <div class="card-body">
+                <h5 class="card-title">Arcade</h5>
+                <p class="card-text">$90/yr</p>
+                <p class="card-title2">2 months free</p>
+              </div>
+            </div>
+          
+            <div class="card me-2 plan" style="width: 9rem; height: 150px;">
+              <img src="assets/images/icon-advanced.svg" class="card-img-top p-2 mt-3 ms-2 mb-2" style="width: 3.2rem;">
+              <div class="card-body">
+                <h5 class="card-title">Advanced</h5>
+                <p class="card-text">$120/yr</p>
+                <p class="card-title2">2 months free</p>
+              </div>
+            </div>
+          
+            <div class="card me-2 plan" style="width: 9rem; height: 150px;">
+              <img src="assets/images/icon-pro.svg" class="card-img-top p-2 mt-3 ms-2 mb-2" style="width: 3.2rem;">
+              <div class="card-body">
+                <h5 class="card-title">Pro</h5>
+                <p class="card-text">$150/yr</p>
+                <p class="card-title2">2 months free</p>
+              </div>
+            </div>
+          </div>
+          <!---------------- End yearly --------------->
+
+        </div>
+
+        <div class="subscription  d-flex fs-6 bg-secondary-subtle p-2 justify-content-center">
+          <span class="me-4 monthly">Monthly</span>
+          <span class="change-theme me-4">
+            <div class="one">
+              <div class="button-swich white-monthly"></div>
+            </div>
+          </span>
+          <span class="yearly">Yearly</span>
+        </div>
+
+        <div class="container buttons-step-2 d-flex">
+          <a href="#" class="back-2 p-2">Go Back</a>
+          <a href="#" class="btn p-2 Next-2">Next Step</a>
+        </div>
+
+    </div>
+    
+    <!---------------------------------------------- Step 2 end -------------------------------------------------->
+
+    <!---------------------------------------------- Step 3 start ------------------------------------------------> 
+
+    <div class="container step-3 display-none">
+      
+      <h1 class="fw-bold">Pick add-ons</h1>
+      <p>Add-ons help enhance your gaming experience.</p>
+      
+      <!------------- monthly ---------------->
+      <div class="monthly">
+
+        <div class="service-monthly">
+          <div class="row">
+            <div class="col mt-3 ms-3">
+              <img src="assets/images/icon-checkmark.svg" class="checkMark1">
+            </div>
+            <div class="col-7 mt-2">
+              <div class="fw-bold">Online service</div>
+              <div  class="service-div"> Access to multiplayer games</div>
+            </div>
+            <div class="col mt-3 ms-1 price-monthly">+$1/mo</div>
+          </div>
+        </div>
+        
+        <div class="storage-monthly">
+          <div class="row">
+            <div class="col mt-3 ms-3">
+              <img src="assets/images/icon-checkmark.svg" class="checkMark2">
+            </div>
+            <div class="col-7 mt-2">
+              <div class="fw-bold">Larger storage</div>
+              <div class="storage-div">Extra 1TB of cloud save</div>
+            </div>
+            <div class="col mt-3 ms-1 price-monthly">+$2/mo</div>
+          </div>
+        </div>
+        
+        <div class="Profile-monthly">
+          <div class="row">
+            <div class="col mt-3 ms-3">
+              <img src="assets/images/icon-checkmark.svg" class="checkMark3">
+            </div>
+            <div class="col-7 mt-2">
+              <div class="fw-bold">Customizable Profile</div>
+              <div  class="Customizable-div">Custom theme on your profile</div>
+            </div>
+            <div class="col mt-3 ms-1 price-monthly">+$2/mo</div>
+          </div>
+        </div>
+
+      </div>
+      <!------------- end of month ------------------>
+
+      <!------------- start of yearly ------------------>
+      <div class="yearly">
+
+        <div class="service-yearly">
+          <div class="row">
+            <div class="col mt-3 ms-3">
+              <img src="assets/images/icon-checkmark.svg" class="checkMark1">
+            </div>
+            <div class="col-7 mt-2">
+              <div class="fw-bold">Online service</div>
+              <div class="service-div"> Access to multiplayer games</div>
+            </div>
+            <div class="col mt-3 ms-1 price-yearly">+$10/yr</div>
+          </div>
+        </div>
+        
+        <div class="storage-yearly">
+          <div class="row">
+            <div class="col mt-3 ms-3">
+              <img src="assets/images/icon-checkmark.svg" class="checkMark2">
+            </div>
+            <div class="col-7 mt-2">
+              <div class="fw-bold " >Larger storage</div>
+              <div class="storage-div">Extra 1TB of cloud save</div>
+            </div>
+            <div class="col mt-3 ms-1 price-yearly">+$20/yr</div>
+          </div>
+        </div>
+        
+        <div class="Profile-yearly">
+          <div class="row">
+            <div class="col mt-3 ms-3">
+              <img src="assets/images/icon-checkmark.svg" class="checkMark3">
+            </div>
+            <div class="col-7 mt-2">
+              <div class="fw-bold" >Customizable Profile</div>
+              <div class="Customizable-div">Custom theme on your profile</div>
+            </div>
+            <div class="col mt-3 ms-1 price-yearly">+$20/yr</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!------------- end of yearly ------------------>
+
+      <div class="d-flex buttons-step-3">
+          <a href="#" class="back-3  ms-3">Go Back</a>
+          <a href="#" class="btn Next-3">Next Step</a>
+      </div>
+
+    </div>
+    <!---------------------------------------------- Step 3 end -------------------------------------------------->
+
+    <!---------------------------------------------- Step 4 start ------------------------------------------------>
+    <div class="container step-4 display-none">
+
+      <h1 class="fw-bold">Finishing up</h1>
+      <p>Double-check everything looks OK before confirming.</p>
+
+      <!-------- Arcade monthly --------------->
+      <div class="arcade-monthly display-none">
+
+        <div class="container arcade d-flex pt-3 pb-3 ps-4 pe-4">
+          <div>
+            <h3>Arcade (Monthly)</h3>
+            <a href="#">change</a>
+          </div>
+          <div class="ms-auto">$9/mo</div>
+        </div>
+        <hr>
+        <div class="container service d-flex pt-3 pb-1 ps-4 pe-4">
+          <div>Online service</div>
+          <div class="ms-auto">+$1/mo</div>
+        </div>
+        <div class="container storage d-flex pt-3 pb-1 ps-4 pe-4">
+          <div>Larger storage</div>
+          <div class="ms-auto">+$2/mo</div>
+        </div>
+      
+
+      <div class="container d-flex">
+        <div class="total pt-3 ps-3 pe-3 mt-4">Total (per month)</div>
+        <div class="ms-auto pt-3 ps-3 pe-3 total-price mt-4">+$12/mo</div>
+      </div>
+
+      </div>
+      <!-------- End Of Arcade Monthly --------------->
+
+      <!-------- Start Of Arcade Yearly --------------->
+      <div class="arcade-yearly">
+      
+        <div class="container arcade d-flex pt-3 pb-3 ps-4 pe-4">
+          <div>
+            <h3>Arcade (Yearly)</h3>
+            <a href="#">change</a>
+          </div>
+          <div class="ms-auto">$90/yr</div>
+        </div>
+        <hr>
+        <div class="container service d-flex pt-3 pb-1 ps-4 pe-4">
+          <div>Online service</div>
+          <div class="ms-auto">+$10/yr</div>
+        </div>
+        <div class="container storage d-flex pt-3 pb-1 ps-4 pe-4">
+          <div>Larger storage</div>
+          <div class="ms-auto">+$20/yr</div>
+        </div>
+      
+      
+        <div class="container d-flex">
+          <div class="total pt-3 ps-3 pe-3 mt-4">Total (per month)</div>
+          <div class="ms-auto pt-3 ps-3 pe-3 total-price mt-4">+$120/yr</div>
+        </div>
+      
+      </div>
+      <!-------- End Of Arcade Yearly --------------->
+
+      <div class="d-flex buttons-step-4  justify-content-center">
+        <a href="#" class="back-4">Go Back</a>
+        <a href="#" class="btn confirm ms-auto">Confirm</a>
+      </div>
+
+    </div>
+
+    <!---------------------------------------------- Step 4 End ------------------------------------------------>
+
+    <!---------------------------------------------- Step 5 Start ------------------------------------------------>
+    <div class="container step-5">
+      
+      <img src="/assets/images/icon-thank-you.svg" alt="">
+      <h1>Thank you!</h1>
+      <p>Thanks for confirming your subscription! We hope you have fun
+        using our platform. If you ever need support, please feel free
+        to email us at support@loremgaming.com.</p>
+        
+      </div>
+      
+    </div>
+    <!---------------------------------------------- Step 5 End ------------------------------------------------>
+  
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/file.js"></script>
+</body>
+</html>
